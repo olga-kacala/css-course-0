@@ -1,3 +1,39 @@
+body {
+    background-color: grey;
+}
+
 .grid-container {
     display: grid;
-}
+    grid-template-columns: 200px 200px;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 20px;
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "sidebar content"
+    }
+
+    .grid-item-1 {
+        grid-area: header;
+        background-color: blueviolet;
+    }
+
+    .grid-item-2 {
+        grid-area: sidebar;
+        background-color: pink;
+    }
+
+    .grid-item-3 {
+    
+        background-color: blueviolet;
+    }
+
+    .grid-item-4 {
+        
+        background-color: pink;
+    }
+
+    .grid-item-5 {
+    
+        background-color: blueviolet;
+    }
